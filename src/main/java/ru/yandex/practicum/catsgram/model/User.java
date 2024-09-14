@@ -7,17 +7,11 @@ import lombok.NonNull;
 import java.time.Instant;
 
 @Data
-@EqualsAndHashCode(of = { "email" })
+@EqualsAndHashCode(of = { "id" })
 public class User {
     Long id;
-    @NonNull
-    String username;
-    @NonNull
     String email;
-    @NonNull
+    String username;
     String password;
-    @NonNull
     Instant registrationDate;
-
-
 }
