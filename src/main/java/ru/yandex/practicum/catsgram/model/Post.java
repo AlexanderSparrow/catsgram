@@ -1,6 +1,5 @@
 package ru.yandex.practicum.catsgram.model;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -16,7 +15,6 @@ public class Post {
     Instant postDate;
 
     // Конструктор с аннотацией @JsonCreator для корректной десериализации
-    @JsonCreator
     public Post(@JsonProperty("authorId") long authorId,
                 @JsonProperty("description") String description) {
         this.authorId = authorId;
