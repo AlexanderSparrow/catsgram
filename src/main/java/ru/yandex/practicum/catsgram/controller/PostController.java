@@ -15,6 +15,7 @@ public class PostController {
 
     @GetMapping
     public Collection<Post> findAll() {
+
         return postService.findAll();
     }
 

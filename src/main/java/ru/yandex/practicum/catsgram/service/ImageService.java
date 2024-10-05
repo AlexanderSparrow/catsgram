@@ -93,6 +93,7 @@ public class ImageService {
         }
     }
 
+    // загружаем данные указанного изображения с диска
     public ImageData getImageData(long imageId) {
         if (!images.containsKey(imageId)) {
             throw new NotFoundException("Изображение с id = " + imageId + " не найдено");
