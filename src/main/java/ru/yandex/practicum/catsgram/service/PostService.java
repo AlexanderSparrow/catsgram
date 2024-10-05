@@ -17,7 +17,7 @@ import java.util.Optional;
 public class PostService {
     private final Map<Long, Post> posts = new HashMap<>();
 
-    public Collection<Post> findAll() {
+    public Collection<Post> findAll(int from, int size, String sort) {
         return posts.values();
     }
 
