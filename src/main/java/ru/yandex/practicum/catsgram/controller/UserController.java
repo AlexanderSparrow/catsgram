@@ -13,10 +13,6 @@ public class UserController {
 
     private final UserService userService;
 
-   /* public UserController(UserService userService) {
-        this.userService = userService;
-    }*/
-
     // Получение списка всех пользователей
     @GetMapping
     public Collection<User> findAll() {
