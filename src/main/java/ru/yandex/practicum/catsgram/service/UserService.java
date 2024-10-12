@@ -41,7 +41,6 @@ public class UserService {
         return user;
     }
 
-
     // Обновление данных существующего пользователя
     public User update(@RequestBody User user) {
         // Проверяем, что указан id
@@ -81,6 +80,7 @@ public class UserService {
                 .orElse(0);
         return ++currentMaxId;
     }
+
     //@Autowired
     public Optional<User> findUserById(Long userId) {
         return Optional.ofNullable(users.get(userId));

@@ -39,6 +39,7 @@ public class ImageController {
 
         return new ResponseEntity<>(imageData.getData(), headers, HttpStatus.OK);
     }
+
     @PostMapping("/{postId}/images")
     public List<Image> uploadImages(@PathVariable long postId,
                                     @RequestParam("files") List<MultipartFile> files) {
